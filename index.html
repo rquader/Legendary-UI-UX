@@ -985,6 +985,23 @@
     </div>
   </section>
 
+  <section class="movement" id="m-about" aria-labelledby="h-about">
+    <p class="number">·</p>
+    <h2 id="h-about" data-inertial>on making</h2>
+    <p class="lede">mostly an experiment in what AI could build.</p>
+    <div class="prose">
+      <p>
+        Much of this site began as a test: what happens if you give an AI a single HTML file, no network, and permission to be strange? The primitives, the palette, the room structure, and most of the prose — including this paragraph — were largely machine-generated, shaped with feedback from a human who wanted to see whether the result could feel like a room rather than a demo.
+      </p>
+      <p>
+        That origin does not excuse sloppiness, but it explains the register. The voice is literary because the model reaches for literature. The herons and rivers are gone from the colour room; the synesthesia tab now talks about screens and midnight instead. The demonstrations still have to earn their keep.
+      </p>
+      <p class="aside">
+        If you are reading this vault in Obsidian, it tracks the same experiment — field notes written alongside the artefact, not a press kit.
+      </p>
+    </div>
+  </section>
+
   <footer class="coda" id="coda" aria-labelledby="h-coda">
     <h2 id="h-coda">coda</h2>
     <div class="prose">
@@ -1002,7 +1019,7 @@
       <button class="toggle" type="button" data-toggle="companion" aria-pressed="true">companion</button>
       <button class="toggle" type="button" data-toggle="margin"    aria-pressed="true">margin</button>
     </div>
-    <p class="signature">— written and built in one sitting, 2026. one file. no network.</p>
+    <p class="signature">— begun as an AI experiment, with feedback by a human, 2026. one file. no network.</p>
   </footer>
 
 </section>
@@ -1041,17 +1058,19 @@
     <p class="lede">words have weights and colours we never agree on.</p>
     <div class="prose">
       <p>
-        Rimbaud wrote a poem in 1871 that assigned colours to the vowels: <em>A black, E white, I red, U green, O blue</em>. We have inherited none of his certainty. But the idea — that letters carry secret weights of pigment — is a useful fiction.
+        Researchers ask synesthetes to name the colour of each letter. The answers disagree. That disagreement is the whole point: there is no universal chart, only private ones. The mapping below is another fiction — a palette chosen so the room could show you what averaging feels like.
       </p>
       <p>
-        The mapping below is a fiction too. Each letter has a hue I gave it. Each word's colour is the average of its letters'. Hover any word in the passage — the room will take its colour for as long as you are looking. The letters themselves will lift their grey gauze.
+        Each letter has a hue I gave it. Each word's colour is the average of its letters'. Hover any word in the passage — the room will take its colour for as long as you are looking. The letters themselves will lift their grey gauze.
       </p>
     </div>
-    <p class="syn-passage" id="syn-passage">In the long blue hour before dawn the river collects everything the day will say. The reeds hold tin and bronze. The herons have not yet decided what to be.
+    <p class="syn-passage" id="syn-passage">The screen is grey until a word asks it otherwise. Open any tab late at night and the interface pretends it has no temperature — flat, obedient, politely invisible.
 
-A bell sounds, and the bell is the colour of the word for bell — copper, certainly, but warmer than copper, the way fire is warmer than its photograph. We name colours with words that have colours of their own, and there is no exit from the loop.
+But language was never flat. Say subway and something underground shifts toward rust. Say lemon and a thin yellow arrives before you taste it. Say midnight and the room you are in disagrees about how dark that is.
 
-Rimbaud knew. He named the vowels and signed his name in green.</p>
+Hover here. Each letter carries a colour I assigned. Each word borrows the average of its letters. The fiction is deliberate: I wanted to see whether a page could blush when you looked at the right noun.
+
+No synesthete would confirm this chart. Good. The chart was never a claim. It was a way to make pigment legible for sixty seconds.</p>
     <div class="syn-spectrum">
       <p class="spectrum-label">letters of the word you are over</p>
       <div class="spectrum-strip" id="syn-spectrum-strip"></div>
@@ -1756,12 +1775,12 @@ Rimbaud knew. He named the vowels and signed his name in green.</p>
 
   /* ============================================================
      8. synesthesia
-     letter-color mapping (a fiction, inspired by Rimbaud's "Voyelles"
-     and the synesthesia research compilations of Sean Day).
+     letter-color mapping (a fiction; informed by grapheme-colour
+     synesthesia research compilations, not any one person's chart).
      ============================================================ */
 
-  // letter→colour palette. an invented mapping, in conversation with
-  // rimbaud's "voyelles" (1871) and sean day's grapheme-colour synesthesia
+  // letter→colour palette. an invented mapping, nudged by sean day's
+  // grapheme-colour synesthesia compilations (directionality, not authority)
   // compilations. each letter chosen for character, then nudged for
   // legibility against the warm-dark page background.
   const synColors = {
